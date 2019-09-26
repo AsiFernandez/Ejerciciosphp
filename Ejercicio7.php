@@ -7,8 +7,23 @@
    <BODY>
       
       <?php
-      
-      $numero
+
+      $numero = 17;
+
+      do {
+      	if ($numero % 2 == 0) {
+      			$numero = $numero /2;
+      			echo $numero . ", ";
+	    }else{
+	    	$numero = ($numero*3) + 1;
+	      	echo $numero . ", ";
+	    }
+      } while ( $numero > 1);
+    	
+    
+       
+      		
+
       
       
       ?>
