@@ -6,21 +6,27 @@
    </HEAD>
    <BODY>
       
-      <center><?php
+     <center> <?php
+
+         
+
+         do{
             $base = rand(1, 20);
+         }while ( $base % 2 == 0 );
 
-         echo "piramide de $base asteriscos <br> <br>" ; 
-         for($i=1; $i<=$base; $i = $i + 2){
-          echo " ";
-            for($j=1; $j <= $i; $j = $j +2 ){
-                    echo " * ";
-        }
-        echo "<br />";
-    }
+         $altura = floor($base/2);
 
+         for ($i=1; $i <= $base ; $i = $i + 2) { 
+            for ($y=1; $y <= $altura ; $y++) { 
+            }
+            for ($y=1; $y <= $i ; $y++) { 
+              echo "*";
+            }
+            echo "<br>";
+            $altura--;
+         }
 
-
-
+         
       ?></center>
 
    </BODY>
