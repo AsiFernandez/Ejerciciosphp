@@ -6,7 +6,7 @@
 <body>
 	<?php
 		
-		$arrayNumeros =array();
+		$arrayNumeros =[];
 		for ($i=0; $i < 4 ; $i++) { 
 			$arrayNumeros[$i]  = rand(0, 100);
 		}
